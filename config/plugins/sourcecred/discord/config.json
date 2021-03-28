@@ -4,11 +4,17 @@
     "👍": 1,
     ":btc_badger:": 5,
     ":badgerchad:": 20,
-    ":BadgerDao:" : 100,
+    ":BadgerDao:": 100,
     ":badgersaiyan:": 1000,
     ":mouse:": 5,
     ":rabbit:": 20,
-    ":frog:":  100,
+    ":frog:": 100,
     ":wise_badger:": 1000
+  },
+  "channelWeightConfig": {
+    "defaultWeight": 1,
+    "weights": {
+      "825755225285197834": 50
+    }
   }
 }
