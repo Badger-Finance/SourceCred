@@ -11,6 +11,8 @@ on:
 jobs:
   GenerateCredInstance:
     runs-on: ubuntu-latest
+    env:
+      NODE_OPTIONS: --max_old_space_size=6144
     steps:
       - uses: actions/checkout@v2
         with:
@@ -38,7 +40,7 @@ jobs:
           cp -r ./{output,data,config,sourcecred.json,package.json} ./site/
 
       - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@4.1.0
+        uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: gh-pages
